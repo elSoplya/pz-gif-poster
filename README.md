@@ -60,3 +60,7 @@ On macOS, `GIF Poster.command` starts the interactive mode on double-click.
 The scripts load `steam_api64.dll` (Windows), `libsteam_api.dylib` (macOS) or `libsteam_api.so` (Linux) from the Project Zomboid install, connect to the running Steam app as app 108600, and call `StartItemUpdate`, `SetItemPreview` and `SubmitItemUpdate` from the Steamworks UGC interface. Only the preview image is changed.
 
 The SteamCMD method this replaces is described in the guide [How to change the mod poster image to a GIF](https://steamcommunity.com/sharedfiles/filedetails/?id=3324078713).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
