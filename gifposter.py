@@ -294,8 +294,8 @@ def check_gif(gif):
     if size >= MAX_BYTES:
         raise Error("%s is %d KB - a workshop poster must be under 1 MB" % (gif, size // 1024))
     width, height = struct.unpack("<HH", head[6:10])  # logical screen size
-    if (width, height) != (256, 256):
-        print("warning: GIF is %dx%d; workshop posters are meant to be 256x256" % (width, height), file=sys.stderr)
+    if width != height:
+        print("warning: GIF is %dx%d; a square GIF is recommended" % (width, height), file=sys.stderr)
     print("GIF: %s (%d KB, %dx%d)" % (gif, size // 1024, width, height))
     return gif.resolve()
 

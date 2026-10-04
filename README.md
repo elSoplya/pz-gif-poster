@@ -8,7 +8,7 @@ Project Zomboid's in-game uploader only accepts `preview.png`. The usual workaro
 
 - Steam running and signed in, with Project Zomboid installed through Steam.
 - You are the owner or a contributor of the mod.
-- A GIF under 1 MB. 256x256 is recommended; other sizes only get a warning.
+- A square GIF under 1 MB. 256x256 and 512x512 both work; a non-square GIF only gets a warning.
 - Windows: nothing else. macOS and Linux: Python 3.
 
 ## Windows

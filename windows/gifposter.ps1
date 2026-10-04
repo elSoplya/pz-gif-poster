@@ -331,8 +331,8 @@ function Test-Gif([string]$Gif) {
     # Logical screen size: two little-endian uint16 at byte 6.
     $w = $head[6] + 256 * $head[7]
     $h = $head[8] + 256 * $head[9]
-    if ($w -ne 256 -or $h -ne 256) {
-        Write-Host "warning: GIF is ${w}x${h}; workshop posters are meant to be 256x256" -ForegroundColor Yellow
+    if ($w -ne $h) {
+        Write-Host "warning: GIF is ${w}x${h}; a square GIF is recommended" -ForegroundColor Yellow
     }
     Write-Host "GIF: $($item.FullName) ($kb KB, ${w}x${h})"
     return $item.FullName
