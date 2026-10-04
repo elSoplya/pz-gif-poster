@@ -28,8 +28,6 @@ From a command prompt:
 
 `<mod>` is a workshop ID, a workshop URL, a folder containing `workshop.txt` with an `id=` line, or the name of such a folder under `%USERPROFILE%\Zomboid\Workshop`. `[gif]` defaults to `preview.gif` in that folder.
 
-`Steam Check.bat` is a diagnostic: it connects, looks one mod up, disconnects, and reports whether Steam stayed signed in. It uploads nothing and writes `steamcheck_report.txt`.
-
 ## macOS and Linux
 
 ```

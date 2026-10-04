@@ -1,6 +1,5 @@
 .DS_Store
 __pycache__/
-steamcheck_report.txt
 
 # Earlier SteamCMD-based scripts, kept locally; never run against real SteamCMD.
 steamcmd/
